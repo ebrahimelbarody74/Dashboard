@@ -1,0 +1,62 @@
+.widgets{
+    display: flex;
+    padding: 20px;
+    gap: 1rem;
+    .widget{
+        flex: 1;
+        box-shadow: 2px 4px 10px 1px rgba(201, 201, 201, 0.47);
+        border-radius: 10px;
+        height: 100px;
+        padding: 10px;
+        display: flex;
+        .left{
+            flex: 1;
+            &>*{
+                margin: 5px 0 !important;
+                &.counter{
+                    font-size: 30px;
+                }
+            }
+        }
+        .right{
+            flex: 1;
+            display: flex;
+            flex-direction: column;
+            align-items: end;
+            justify-content: space-between;
+            padding: 5px 0;
+            &>svg{
+                font-size: 18px;
+                padding: 5px;
+                border-radius: 5px;
+                align-self: flex-end;
+            }
+            .percentage {
+                display: flex;
+                align-items: center;
+                color: green !important;
+                svg{
+                    color: green !important;
+                    background-color: #fff;
+                }
+            }
+        }
+    }
+}
+.widgets .widget:first-child svg{
+    color: crimson;
+    background-color: rgba(255, 0, 0, 0.2);
+}
+.widgets .widget:nth-child(2) svg{
+    background-color: rgba(218, 165, 32, 0.2);
+    color: goldenrod;
+
+}
+.widgets .widget:nth-child(3) svg{
+    background-color: rgba(0, 128, 0, 0.2);
+    color: green;
+}
+.widgets .widget:nth-child(4) svg{
+    background-color: rgba(128, 0, 128, 0.2);
+    color: purple;
+}

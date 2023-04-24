@@ -1,0 +1,44 @@
+.sidebar{
+    flex: 1 1;
+    padding-left: 10px;
+    border-right: 1px solid #ccc;
+    .logo{
+        font-size: 20px;
+    font-weight: bold;
+    color: #6439ff;
+    border-bottom: 0.5px solid rgb(230, 227, 227);
+    padding: 10px 10px;
+    }
+    ul{
+        padding: 0;
+        font-size: 12px;
+        color: #888;
+        li{
+            display: flex;
+            cursor: pointer;
+            transition: .4s;
+            padding: 3px 6px;
+            align-items: center;
+            svg{
+                color: #6439ff;
+                margin: 0 5px 0 0;
+            }
+            &:hover{
+                background-color: #ccc;
+            }
+            span{
+                // margin: 5px 0;
+            }
+        }
+        p{
+            margin: 10px 0;
+        }
+    }
+}
+
+ul{
+    list-style: none;
+}
+a{
+    text-decoration: none;
+}
